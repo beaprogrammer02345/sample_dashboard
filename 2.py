@@ -191,6 +191,7 @@ if fl is not None:
     data1['layout'].update(title="Relationship between Sales and Profits using Scatter Plot.",
                            titlefont=dict(size=20), xaxis=dict(title="Sales", titlefont=dict(size=16)),
                            yaxis=dict(title="Profit", titlefont=dict(size=16)))
+    #last view
     st.plotly_chart(data1, use_container_width=True)
 
 
