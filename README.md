@@ -64,18 +64,4 @@ Create a new branch (git checkout -b feature-branch).
 Commit your changes (git commit -m 'Add new feature').
 Push to the branch (git push origin feature-branch).
 Open a pull request.
-Feel free to raise any issues or suggestions for further improvements.
 
-You can customize the above README according to your project’s specific requirements.
-
-
-
-
-
-
-
-
-
-
-
-ChatGPT can make 
