@@ -20,11 +20,6 @@ st.markdown('<style>div.block-container{padding-top:2rem;}</style>',unsafe_allow
 #This code is running for a sales dataset having region, state, order date columns in it.
 def parse_dates(df, date_column):
     date_formats = [
-        #'%m-%d-%Y', '%d-%m-%Y', '%Y-%m-%d', '%d-%m-%y', '%m/%d/%Y',
-        #'%Y-%m-%d %H:%M:%S', '%d/%m/%Y %H:%M:%S', '%d-%m-%Y %H:%M:%S',
-        #'%d-%m-%Y', '%d/%m/%Y', '%Y/%m/%d'
-
-
         #added more date format
 
         '%m-%d-%Y', '%d-%m-%Y', '%Y-%m-%d', '%d-%m-%y', '%m/%d/%Y',
@@ -49,6 +44,7 @@ def parse_dates(df, date_column):
 
 # File uploader
 fl = st.file_uploader(":file_folder: Upload a file", type=(["csv","txt","xlsx","xls"]))
+st.warning("Please Upload a sales datasets only having Profit , Order Date, Category ,Region.")
 
 if fl is not None:
     st.write(fl.name)  # Show the name of the uploaded file
